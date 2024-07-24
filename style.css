@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;1,200;1,300;1,400;1,500;1,600&display=swap');
+
+:root {
+    /* Colors  */
+
+    /* Primary  */
+    --red: hsl(0, 78%, 62%);
+    --cyan: hsl(180, 62%, 55%);
+    --orange: hsl(34, 97%, 64%);
+    --blue: hsl(212, 86%, 64%);
+
+    /* Neutral */
+
+    --very-dark-blue: hsl(234, 12%, 34%);
+    --grayish-blue: hsl(229, 6%, 66%);
+    --very-light-gray: hsl(0, 0%, 98%);
+
+    /* Typography */
+
+    --font-size: 15px;
+    --font-family: Poppins;
+    --font-size: 15px;
+    --fw-light: 200;
+    --fw-regular: 400;
+    --fw-b0ld: 600;
+
+    /* Utility */
+    --margin-bottom: 10px;
+    --card-margin-bottom: 24px;
+    --card-padding: 30px;
+}
+
+body {
+    width: 100vw;
+    min-height: 100vh;
+    padding: 20px 0;
+    font-family: var(--font-family);
+    font-size: var(--font-size);
+    color: var(--very-dark-blue);
+    box-sizing: border-box;
+    background-color: var(--very-light-gray);
+}
+
+p,
+h2,
+h3 {
+    margin: 0;
+}
+
+.main__container {
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    text-align: center;
+}
+
+.feature {
+    margin: 30px;
+    display: grid;
+    gap: 60px;
+}
+
+.feature__header--text-thin {
+    font-size: x-large;
+    font-weight: var(--fw-light);
+    color: var(--grayish-blue);
+    margin-bottom: var(--margin-bottom);
+}
+
+.feature__header--text-bold {
+    font-size: x-large;
+    font-weight: var(--fw-b0ld);
+    margin-bottom: var(--card-margin-bottom);
+}
+
+.feature__header--text-regular {
+    text-align: center;
+    color: var(--grayish-blue);
+}
+
+.card {
+    max-width: 315px;
+    display: grid;
+    margin-bottom: var(--card-margin-bottom);
+    padding: var(--card-padding);
+    background-color: #fff;
+    text-align: start;
+    border-radius: 0.3rem;
+    box-shadow: hsl(237, 24%, 85%) 0px 25px 50px -12px;
+}
+
+.card__title {
+    margin-bottom: var(--margin-bottom);
+}
+
+.card__text {
+    font-size: small;
+    color: var(--grayish-blue);
+    margin-bottom: 40px;
+}
+
+.card__image {
+    justify-self: end;
+}
+
+.card__supervisor {
+    border-top: 4px solid var(--cyan);
+}
+
+.card__team-builder {
+    border-top: 4px solid var(--red);
+}
+
+.card__karma {
+    border-top: 4px solid var(--orange);
+}
+
+.card__calculator {
+    border-top: 4px solid var(--blue);
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
